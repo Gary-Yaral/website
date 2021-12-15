@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Mantenimiento de PC y laptops Babahoyo, páginas web">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,25 +16,65 @@
   <nav>
     <article class="nav__menu">
       <div class="menu__logo">
-        <a href="#">GARY YARAL</a>
+        <a href="#" title="">GARY YARAL</a>
       </div>
-      <a class="toggle" href="#">
+      <a class="toggle" href="#" title="btn-toggle">
         <div class="line"></div>
         <div class="line"></div>
       </a>
-      <div class="menu__routes">
-        <a href="#" class="underline">Inicio</a>
-        <a href="" class="underline">Servicios</a>
-        <a href="" class="underline">Sobre mí</a>
-        <a href="" class="underline">Contactar</a>
-        <a href="" class="underline">Blog</a>
+      <div class="menu__routes menu-hidden">
+        <a href="#" class="underline" title="">Inicio</a>
+        <a href="" class="underline" title="">Servicios</a>
+        <a href="" class="underline" title="">Sobre mí</a>
+        <a href="" class="underline" title="">Contactar</a>
+        <a href="" class="underline" title="">Blog</a>
       </div>
     </article>
     <article class="nav__info">
       <h3>Cuéntame ¿qué necesitas?</h3>
       <h1>Te ayudaré!</h1>
-      <a href="#">Contactar</a>
+      <a href="#" title="">Contactar</a>
     </article>
   </nav>
+  <div >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quibusdam aliquam, saepe officiis dolore molestias. Rem est reprehenderit ipsum esse error nam illo pariatur quos tempora, ducimus, aperiam officia dolorum!
+    Natus, repudiandae. Ratione, placeat iusto! Quisquam aperiam error ipsam repellendus saepe repellat nihil eveniet doloribus accusamus deleniti nostrum in qui temporibus, ab voluptatum numquam, dolore incidunt? Aliquam iure minima optio.
+    Voluptas, sapiente aliquam blanditiis voluptatem itaque autem hic natus nisi adipisci molestias aperiam, at obcaecati voluptatibus eius, rem facere? Vero, unde enim esse temporibus voluptas provident alias nobis optio autem?
+    Quod laboriosam distinctio obcaecati, tenetur quaerat velit dolorem vitae ab quidem assumenda provident modi eos perspiciatis. Iusto neque non odit ex quaerat consequatur eveniet obcaecati. Repellendus facilis labore quasi eligendi?
+    Libero, odit impedit eos l lorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur aliquam asperiores explicabo. Rerum molestiae velit nam! Nihil, ex delectus ut voluptatum magnam sapiente voluptatibus iure a dolor assumenda ullam.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius soluta quos laboriosam molestias praesentium aperiam saepe fugiat veniam, odio odit culpa optio illo repellat atque eveniet consequuntur earum ipsa repellendus!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quas non vel, impedit tenetur obcaecati culpa ad magni pariatur incidunt repellendus voluptates natus animi cumque aut saepe ducimus quasi optio.
+    abore modi dolorem iste vel deleniti? Esse possimus sit neque rem nisi, sint nostrum sed quas. Voluptates cupiditate quod et non alias expedita beatae sed distinctio?
+  </div>
+  <script>
+    const BTN_MENU = document.querySelector('.toggle');
+    const BARS = BTN_MENU.querySelectorAll('div');
+    const LINKS = document.querySelector('.menu__routes');
+    const NAV_INFO = document.querySelector('.nav__info');
+    const LIMIT = NAV_INFO.offsetTop - 25;
+    const NAVBAR = document.querySelector('.nav__menu');
+    function openMenu(lines,links){
+      lines[0].classList.toggle('bar1');
+      lines[1].classList.toggle('bar2');
+      links.classList.toggle('menu-hidden');
+    }
+
+    BTN_MENU.onclick = (e) => {
+      e.preventDefault();
+      openMenu(BARS, LINKS);
+    }
+
+
+    window.onscroll = ()=>{
+      if (window.scrollY >= LIMIT) {
+        NAVBAR.classList.add('non-opacity');
+        console.log('ready')
+      } else {
+        NAVBAR.classList.remove('non-opacity');
+      }
+    }
+
+  </script>
 </body>
 </html>
