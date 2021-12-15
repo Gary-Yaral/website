@@ -135,12 +135,14 @@ nav{
     align-items: center;
     justify-content: space-evenly;
     margin-right: 2rem;
+    padding: .1rem;
   }
 
   .toggle div{
     width: 95%;
-    height: .3rem;
+    height: .2rem;
     background: rgb(255, 255, 255);
+    border-radius: .5rem;
   }
 }
 
