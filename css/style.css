@@ -111,7 +111,6 @@ nav{
   transition: .5s ease-in-out background;
 }
 
-
 @media screen and (max-width:600px){
   .nav__menu{
     grid-template-columns: .6fr 1.4fr;
@@ -137,7 +136,7 @@ nav{
     background: -moz-linear-gradient(top left, #6C6AC6, #F0A32F);
     background: linear-gradient(to bottom right, #6C6AC6, #F0A32F);
     transition: .2s ease-in-out;
-    height: 500px;
+    min-height: 100vh;
   }
 
   .menu__routes a{
@@ -230,5 +229,4 @@ nav{
     box-shadow: 0 0 5px .5px rgba(65, 56, 26, 0.568);
   }
 }
-
 
