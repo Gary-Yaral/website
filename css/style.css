@@ -121,6 +121,10 @@ nav{
   color: rgb(63, 63, 63);
 }
 
+aside{
+  width:100%;
+}
+
 .content aside h3,
 .content aside p{
   font-size: 1rem;
