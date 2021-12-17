@@ -37,46 +37,15 @@
     </article>
   </nav>
   <section class="content">
-    <h3>"Las Matemáticas y la programación son algunas de las cosas que más me apasionan"</h3>
+    <img src="assets/image1.jpg" alt="image1" srcset="">
+    <aside>
+      <h3>"El aprendizaje continuo y la experiencia, te dan la certeza de que haces las cosas como se deben"</h3>
+      <p>Querer avanzar, es la fuerza que impulsa mi anhelo por descubrir o adquirir nuevos conocimientos, para poder ayudar a más personas a través de la tecnología.</p>
+    </aside> 
   </section>
   <div >
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quibusdam aliquam, saepe officiis dolore molestias. Rem est reprehenderit ipsum esse error nam illo pariatur quos tempora, ducimus, aperiam officia dolorum!
-    Natus, repudiandae. Ratione, placeat iusto! Quisquam aperiam error ipsam repellendus saepe repellat nihil eveniet doloribus accusamus deleniti nostrum in qui temporibus, ab voluptatum numquam, dolore incidunt? Aliquam iure minima optio.
-    Voluptas, sapiente aliquam blanditiis voluptatem itaque autem hic natus nisi adipisci molestias aperiam, at obcaecati voluptatibus eius, rem facere? Vero, unde enim esse temporibus voluptas provident alias nobis optio autem?
-    Quod laboriosam distinctio obcaecati, tenetur quaerat velit dolorem vitae ab quidem assumenda provident modi eos perspiciatis. Iusto neque non odit ex quaerat consequatur eveniet obcaecati. Repellendus facilis labore quasi eligendi?
-    Libero, odit impedit eos l lorem
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur aliquam asperiores explicabo. Rerum molestiae velit nam! Nihil, ex delectus ut voluptatum magnam sapiente voluptatibus iure a dolor assumenda ullam.
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius soluta quos laboriosam molestias praesentium aperiam saepe fugiat veniam, odio odit culpa optio illo repellat atque eveniet consequuntur earum ipsa repellendus!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quas non vel, impedit tenetur obcaecati culpa ad magni pariatur incidunt repellendus voluptates natus animi cumque aut saepe ducimus quasi optio.
-    abore modi dolorem iste vel deleniti? Esse possimus sit neque rem nisi, sint nostrum sed quas. Voluptates cupiditate quod et non alias expedita beatae sed distinctio?
+    
   </div>
-  <script>
-    const BTN_MENU = document.querySelector('.toggle');
-    const BARS = BTN_MENU.querySelectorAll('div');
-    const LINKS = document.querySelector('.menu__routes');
-    const NAV_INFO = document.querySelector('.nav__info');
-    const LIMIT = NAV_INFO.offsetTop - 25;
-    const NAVBAR = document.querySelector('.nav__menu');
-    function openMenu(lines,links){
-      lines[0].classList.toggle('bar1');
-      lines[1].classList.toggle('bar2');
-      links.classList.toggle('menu-hidden');
-    }
-
-    BTN_MENU.onclick = (e) => {
-      e.preventDefault();
-      openMenu(BARS, LINKS);
-    }
-
-
-    window.onscroll = ()=>{
-      if (window.scrollY >= LIMIT) {
-        NAVBAR.classList.add('non-opacity');
-      } else {
-        NAVBAR.classList.remove('non-opacity');
-      }
-    }
-
-  </script>
+  <script src="js/index.js"></script>
 </body>
 </html>
