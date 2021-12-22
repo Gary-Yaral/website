@@ -203,7 +203,7 @@ footer{
   }
 }
 
-@media screen and (max-width:600px){ 
+@media screen and (max-width:550px){ 
   .more{
     width:95%;
     display: grid;
@@ -308,6 +308,7 @@ footer{
     grid-template-columns:1fr;
     align-items:center;
     color: rgb(63, 63, 63);
+    margin-bottom: 2rem;
   }
 
   .more{
